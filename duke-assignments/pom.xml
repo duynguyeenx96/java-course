@@ -13,13 +13,12 @@
     <artifactId>duke-assignments</artifactId>
 
     <dependencies>
-        <!-- Duke University Java library (edu.duke.*) -->
-        <!-- Download JAR from: https://users.cs.duke.edu/~rodger/books/bj4e/programs/JavaFiles/EduDuke.jar -->
-        <!-- Then run: mvn install:install-file -Dfile=edu-duke.jar -DgroupId=edu.duke -DartifactId=edu-duke -Dversion=1.0 -Dpackaging=jar -->
         <dependency>
             <groupId>edu.duke</groupId>
-            <artifactId>edu-duke</artifactId>
+            <artifactId>courserajava</artifactId>
             <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/courserajava.jar</systemPath>
         </dependency>
     </dependencies>
 
